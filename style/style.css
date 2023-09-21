@@ -175,6 +175,7 @@ article {
 
 .carusel-elem__item {
     width: 100%;
+    cursor: pointer;
 }
 
 .view-carusel {
@@ -186,7 +187,7 @@ article {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     gap: 2px;
-    width: 120px;
+    width: 150px;
     margin-top: 4px;
 }
 
@@ -195,7 +196,7 @@ article {
 }
 
 .views__rate > p {
-    margin-left: 5px;
+    margin-left: 7px;
 }
 
 
@@ -234,4 +235,18 @@ article {
     cursor: pointer;
     margin: 20px 0;
 
+}
+
+.container__timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-size: 1.4em;
+    color: #FFF;
+    
+}
+
+.alert {
+    display: none;
 }
