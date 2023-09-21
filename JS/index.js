@@ -28,3 +28,15 @@ caruselElem.forEach(el => {
         document.querySelector('.carusel__preview-img').src = el.getAttribute('src');
     })
 });
+
+const stars = document.querySelectorAll(".views__rate img");
+
+stars.forEach((star, index1) => {
+    star.addEventListener('click', () => {
+        stars.forEach((star, index2) => {
+            index1 >= index2 ? star.src = "/public/images/property-1-fill.png" : star.src = "/public/images/property-1-stroke.png"
+
+        })
+        document.querySelector(".views-zvezda p").innerHTML = "(11)";
+    })
+})

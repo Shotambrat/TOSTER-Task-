@@ -182,12 +182,18 @@ article {
     margin-top: 20px;
 }
 
+.views-zvezda {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
 .views__rate {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     gap: 2px;
-    width: 150px;
+    width: 120px;
     margin-top: 4px;
 }
 
@@ -195,8 +201,12 @@ article {
     width: 100%;
 }
 
-.views__rate > p {
-    margin-left: 7px;
+.views-zvezda > p {
+    height: 25px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -204,12 +214,15 @@ article {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    column-gap: 10px;
 }
 
 .measure-container > p {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 30px;
     align-items: end;
+    font-size: .9em;
 }
 
 .measure-box {
@@ -243,10 +256,16 @@ article {
     height: 40px;
     border-radius: 10px;
     background-color: #37D997;
-    color: white;
     cursor: pointer;
     margin: 20px 0;
+}
 
+.measure-buyNow > a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+    font-weight: bold;
+    font-family: 'Lunasima', sans-serif;
 }
 
 .container__timer {
@@ -269,4 +288,6 @@ select {
     height: 40px;
     border-radius: 10px;
     text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
 }
