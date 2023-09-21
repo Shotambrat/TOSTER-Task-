@@ -216,11 +216,23 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     height: 40px;
+    background: #fff;
     border-radius: 10px;
-    background-color: white;
-    cursor: pointer;
+}
+.measure-box_item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.5s;
 }
 
 .measure-buyNow {
@@ -249,4 +261,12 @@ article {
 
 .alert {
     display: none;
+}
+
+select {
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
 }
