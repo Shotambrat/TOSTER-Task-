@@ -49,9 +49,9 @@ header {
 }
 
 .logo__ellipse {
-    position: absolute;
-    left: 246px;
-    top: 70px;
+    position: relative;
+    left: 155px;
+    top: -7px;
     width: 15px;
     height: 15px;
 }
