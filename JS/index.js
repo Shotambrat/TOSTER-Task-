@@ -1,3 +1,4 @@
+// Не судите резко, я просто рандомно взял
 const finaleTime = new Date("January 1, 2024 00:00:00").getTime();
 
 const timer = () =>{
@@ -17,18 +18,25 @@ const timer = () =>{
     document.querySelector('#seconds').textContent = seconds;
 }
 timer();
-// Calling the function every 1000 milliseconds.
+// ВЫзываем каждые 1000 мс
 setInterval(timer, 1000);
 
+
+// Реализация свайпеора)
 const caruselElem = document.querySelectorAll('.carusel-elem__item');
 
 caruselElem.forEach(el => {
 
     el.addEventListener('click', (e) => {
         document.querySelector('.carusel__preview-img').src = el.getAttribute('src');
+        const current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        el.className += " active";
     })
 });
 
+
+// РЕЙТИНГ система
 const stars = document.querySelectorAll(".views__rate img");
 
 stars.forEach((star, index1) => {

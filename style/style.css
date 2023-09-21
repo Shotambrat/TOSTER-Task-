@@ -46,7 +46,14 @@ header {
 
 .logo-cushion {
     width: 200px;
-    
+}
+
+.logo__ellipse {
+    position: absolute;
+    left: 461px;
+    top: 70px;
+    width: 15px;
+    height: 15px;
 }
 
 .logo-h2 {
@@ -97,6 +104,7 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100px;
     height: 60px;
     padding: 10px;
@@ -113,6 +121,12 @@ article {
     font-weight: bold;
     line-height: normal;
     text-transform: uppercase;
+}
+
+.sales-text2 {
+    text-decoration: line-through 1.3px red;
+    font-size: 0.9em;
+
 }
 
 .characteristic-container {
@@ -281,10 +295,6 @@ article {
     
 }
 
-.alert {
-    display: none;
-}
-
 select {
     border: none;
     width: 100%;
@@ -293,4 +303,8 @@ select {
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+.active {
+    filter: grayscale(1)
 }
